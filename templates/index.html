@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style1.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <style>
+      </style>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="text-align: center; 
+    background-color: white; width= 100%; height: 100%;">
+        <nav class="navbar" style=" background: linear-gradient(to bottom,#06A397  0%,rgb(255, 255, 255) 200%);">
+            <div class="navbar-left">
+              <img style=" border-radius: 50%; height: 80px; width: 80px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn-uy9wUgqKLUE9fRuBUqgkhDDUGNpqsiV_w&usqp=CAU" alt="Logo">
+            </div>
+            <div class="navbar-left">
+              <p style=" text-indent: 10px; font-size:2vw;font-family: Raleway,sans-serif;color: rgb(255, 255, 255); line-height: 2.5;"> Placement Prediction </p>  
+            </div>
+        </nav>
+        <div>
+        <h3><b>Enter Your Details and Predict Your Placement Details</b></h3>
+            <br><br>
+    
+        <form style="text-align: left; margin-left: 80px; font-size: 20px;" action="/login" method="post">
+           <label for="gender">1. Enter Your Gender:(Male-0,Female-1)</label><br>
+           <input type="number" id="r" name="gen"><br><br>
+            <label for="sscp">2. Enter Your SSLC Percentage:</label><br>
+            <input type="number" id="p" name="sscp"><br><br>
+           <label for="sscb">3. Enter Your SSLC board:(Central-1,Others-0)</label><br>
+           <input type="number" id="p" name="sscb"><br><br>
+             <label for="hscp">4. Enter Your HSC Percentage:</label><br>
+             <input type="number" id="p" name="hscp"><br><br>
+              <label for="hscb">5. Enter Your SSLC board:(Central-1,Others-0)</label><br>
+              <input type="number" id="p" name="hscb"><br><br>
+                 <label for="hscd">6. Enter Your HSC DEGREE(Science-1,Commerce-2,Arts-3)</label><br>
+                 <input type="number" id="p" name="hscd"><br><br>
+                 <label for="cdp">7. Enter Your College degree percentage(cgpa):</label><br>
+                 <input type="number" id="p" name="cdp"><br><br>
+                  <label for="cd">8. Enter Your COLLEGE DEGREE(Sci&Tech-1,Comm&Mgmt-2,Others-3)</label><br>
+                  <input type="number" id="p" name="cd"><br><br>
+                  <label for="ie">9. Enter Your Intern Experience:(Yes-1,No-0)</label><br>
+                  <input type="number" id="p" name="ie"><br><br>
+                  <label for="at">10. Enter Your Aptitute Test Score:</label><br>
+                  <input type="number" id="p" name="at"><br><br>
+                  <label for="mp">11. Enter your mba percentage:</label><br>
+                  <input type="number" id="p" name="mp"><br><br>
+          
+           <input type="submit" value="Predict">
+        </form>
+        <div style="text-align: left; margin-left: 80px; font-size: 15px;">
+            <h2><b>Result:</b></h2>
+            <h3><b>Your Placement Prediction is:</b></h3>
+            <p><b><h3>{{aa}}</h3></b></p>
+        </div> 
+        </div>
+    </body>
+</html>
